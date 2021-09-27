@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropbtn {
+  background-color: #e92761;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #faafaf;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ababab;
+}
+
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+h1{
+ padding: 2px 450px;
+ color: white;
+ font-family: "courier new";
+ }
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: white;
+}
+
+input[type=submit] {
+  background-color: #e92761;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #4c66af;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+input[type=submit]:hover {
+  background-color: #a1b2c3;
+}
+
+.container {
+  border-radius: 5px;
+  background-image: url("https://www.wiproconsumerlighting.com/sites/default/files/detailimages/A-guide-to-lighting-up-your-stairway_10.jpg");
+  padding: 80px;
+}
+
+.col-75 {
+  float: left;
+  width: 25%;
+  margin-top: 9px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 9px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-75, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="dropdown" style="float:left;">
+   <a href="C:\Users\LENOVO\Desktop\project\emart\index.html">
+  <button class="dropbtn">Home</button>
+</a>
+   </div>
+</div>
+
+<div class="container">
+<h1>Sign Up</h1>
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-75">
+     <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  </div>
+  <div class="row">
+    <div class="col-75">
+        <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+  </div>
+  <div class="row">
+    <div class="col-75">
+     <label for="mail">E-mail ID:</label><br>
+  <input type="text" id="mail" name="mail" value=""><br>
+  </div>
+  <div class="row">
+    <div class="col-75">
+     <label for="mobile">Mobile Number:</label><br>
+  <input type="text" id="mobile" name="mobile" value=""><br>
+  </div>
+  <div class="row">
+    <div class="col-75">
+     <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+</div>
+<div class="row">
+    <div class="col-75">
+     <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br>
+</div>
+<div class="row">
+    <div class="col-75">
+     <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age" value=""><br>
+</div>
+<div class="row">
+    <div class="col-75">
+     <label for="gender">Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+</div>
+<div class="row">
+    <div class="col-75">
+       <label for="Adds">Address:</label>
+     <textarea id="Adds" rows="4" cols="50">
+Please Enter your address here
+</textarea>
+</div>
+  <div class="row">
+    <div class="col-75">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+         <option value="usa">India</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+         <option value="others">Others</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+</body>
+</html>
